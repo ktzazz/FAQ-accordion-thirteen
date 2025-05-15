@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() { //this one is like a 
   const questionAnswerContainers = document.querySelectorAll('.question-answer');
 
   questionAnswerContainers.forEach(container => {
-    const button = container.querySelector('.question-icon .arrow');
+    const button = container.querySelector('.question-icon');
     //gets directly the button .arrow from the father container, in case there's more than one .arrow outside the container in use. It's more specific
     const answer = container.querySelector('.answer');
     const iconOpen = button.querySelector('#icon-open');

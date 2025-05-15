@@ -30,7 +30,7 @@ body {
 .faq-container {
   max-width: 20rem;
   margin: 10rem auto;
-  padding: 2rem 1.5rem 0rem 1.5rem;
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
   background-color: var(--White);
   border-radius: 1rem;
   overflow: hidden;
@@ -42,7 +42,7 @@ body {
   justify-content: left;
   align-items: center;
   gap: 1rem;
-  margin-block-end: 1rem;
+  margin-block-end: 1.5rem;
 }
 
 h1{
@@ -73,6 +73,15 @@ h2{
   font-weight: var(--Font-weight-600);
 }
 
+h2:hover{
+  color: #AD28EB;
+}
+
+.question-icon{
+  cursor: pointer;
+}
+
+
 button{
     grid-area: 1 / 2;
     background-color: transparent;
@@ -81,7 +90,22 @@ button{
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+    box-sizing: border-box;
 }
+
+button:focus-visible{
+  box-sizing: border-box;
+  border: none; 
+  outline: none; 
+  box-shadow: 0 0 5px #ad28eb; 
+}
+
+button:focus:not(:focus-visible){ /* this is to remove the focus outline when the button is clicked*/
+  box-sizing: border-box;
+  border: none; 
+  outline: none; 
+}
+
 
 #icon-close{
   display: none;
@@ -101,11 +125,20 @@ hr{
 }
 
 .answer{
+  max-height: 0;
   overflow: hidden;
-  height: 0;
-  transition: height 0.3s ease-in-out;
+  transition: all 0.6s ease;
+  opacity: 0.8;
 }
 
 .answer.active{
-  height: auto;
+  max-height: 200px;
+  opacity: 1;
+}  
+
+footer{
+    bottom: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
