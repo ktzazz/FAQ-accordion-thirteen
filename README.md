@@ -29,7 +29,7 @@ Users should be able to:
 
 ## My process
 
-This proyect helped me to finally understand a lot of concepts of Js that i found difficult to apply, I still have got a lot to practice but i'm happy that i'm definitely improving.
+This project helped me to finally understand a lot of concepts of Js that i found difficult to apply, I still have got a lot to practice but i'm happy that i'm definitely improving.
 
 ### Built with
 
