@@ -142,3 +142,41 @@ footer{
     text-align: center;
     width: 100%;
 }
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    background-attachment: fixed;
+    background-size: auto;
+    background-position-y: -3.5rem;
+  }
+
+  .faq-container{
+    max-width: 37rem;
+  }
+
+  h2{
+    font-size: 0.9rem;
+  }
+
+  p{
+    font-size: 0.9rem; 
+  }
+
+  footer{
+    position: fixed;
+    z-index: -1;
+  }
+
+}
+
+@media (min-width: 1124px) {
+  
+  body{
+    background-size: contain;
+  }
+
+  .faq-container{
+    max-width: 50rem;
+  }
+}
