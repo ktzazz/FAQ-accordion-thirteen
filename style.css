@@ -179,4 +179,19 @@ footer{
   .faq-container{
     max-width: 50rem;
   }
+
+  h1{
+    font-size: 3.5rem;
+  }
+
+  .faq{
+    grid-template-columns: 37px auto;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 1rem;
+  }
 }
